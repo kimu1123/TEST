@@ -15,7 +15,6 @@ body{
  
 }
 
-
 a {
     color: #333;
     text-decoration: none;
@@ -107,7 +106,7 @@ a {
     margin-right: 45px;
 }
 
-.HeaderNavListItem__link {
+.menu-Item__link {
     display: block;
 }
 
@@ -183,38 +182,37 @@ li{
  }
  
  
+ 
+ 
+ 
+ 
+ /*トップ*/
+ 
+ 
+ 
  main{
    display:block;
  }
  
- section{
-   display: block;
-   
- }
- 
- 
- /*トップ*/
  .FirstView{
-   background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
-   background-size: cover;
+  background-image:url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
     background-position: center;
-    padding-top: 100px;
-    padding-bottom: 28px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    
 }
- 
- .FirstView__main-image--sp{
-   display: none;
- }
- 
- 
 
+.FirstView__main-image--sp {
+    display: none;
+}
  
  .FirstView__main-image{
    width:100%;
  }
  
  img{
-   border: 0;
+    border: 0;
     vertical-align: middle;
 }
 
@@ -281,10 +279,6 @@ h2{
   
 }
 
-img{
-  order: 0;
-    vertical-align: middle
-}
 
 .FirstViewContent__buttons{
   display: flex;
@@ -324,7 +318,7 @@ img{
   
 .FirstViewContent__buttons a:last-of-type{
   background-color: #fff;
-    border:1px solid #e0e0e0;
+    border:1px  solid #e0e0e0;
     color: #333;
     width: 176px;
   
@@ -447,10 +441,202 @@ img {
     border: 0;
 }
 
+@media screen and (max-width: 767px){
+.Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+@media screen and (max-width: 767px){
+.HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+}
+}
+
+@media screen and (max-width: 767px){
+.HeaderLogo__image--pc {
+    display: none;
+}
+}
+
+@media screen and (max-width: 767px){
+.HeaderLogo__image--sp {
+    display: block;
+}
+}
+
+@media screen and (max-width: 767px){
+.HeaderNavList {
+    top: 52px;
+}
+}
+
+
+@media screen and (max-width: 767px){
+main {
+    padding-top: 52px;
+}
+}
+@media screen and (max-width: 767px){
+.FirstView {
+    background-image:none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+}
+
+ @media screen and (max-width: 767px){
+.FirstView__main-image--sp {
+    display: block;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    margin-top: -45vw;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstView__container {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent {
+    margin-bottom: 20px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}
+}
+@media screen and (max-width: 767px){
+.FirstViewContent__images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__images img {
+    width: 27.5%;
+}
+}
+
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons {
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 0;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a {
+    width: 100% !important;
+}
+}
+
+@media screen and (max-width: 767px){
+.FirstViewContent__buttons a:last-of-type {
+    display: none;
+}
+}
+
+
+@media screen and (max-width: 767px){
+.AboutWrapper {
+    padding: 30px 0;
+}
+}
+
+@media screen and (max-width: 767px){
+.About {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
+
+@media screen and (max-width: 767px){
+.About__video {
+    width: 100%;
+    margin-bottom: 16px;
+}
+}
+
+@media screen and (max-width: 767px){
+.About__title {
+    margin-bottom: 50px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 767px){
+.About__title h2 span {
+    letter-spacing: 1px;
+}
+}
+
+@media screen and (min-width: 768px){
+.HeaderLogo {
+    transition: opacity .2s;
+}
+}
+
+
+@media screen and (min-width: 768px){
+.menu-Item  {
+ transition: opacity .2s;
+}
+}
+
+@media screen and (min-width: 768px){
+.FirstViewContent__buttons a {
+    transition: opacity .2s;
+}
+}
+
+@media screen and (max-width: 1024px){
+.About {
+    flex-direction: column;
+}   
+}
+
+@media screen and (max-width: 1024px){
+.About__video {
+    margin-bottom: 16px;
+}
+}
+
+@media screen and (max-width: 1024px){
+.About__title {
+    margin-left: 0;
+}
+}
 
 
 
-/*タブレット*/
+
 
 @media screen and (max-width: 1080px){
 .Header {
@@ -580,202 +766,6 @@ main {
 }
 }
 
-
-
-@media screen and (max-width: 1024px){
-.About {
-    flex-direction: column;
-}   
-}
-
-@media screen and (max-width: 1024px){
-.About__video {
-    margin-bottom: 16px;
-}
-}
-
-@media screen and (max-width: 1024px){
-.About__title {
-    margin-left: 0;
-}
-}
-
-@media screen and (min-width: 768px){
-.HeaderLogo {
-    transition: opacity .2s;
-}
-}
-
-
-@media screen and (min-width: 768px){
-.menu-Item  {
- transition: opacity .2s;
-}
-}
-
-@media screen and (min-width: 768px){
-.FirstViewContent__buttons a {
-    transition: opacity .2s;
-}
-}
-
-/*スマホ*/
-
-@media screen and (max-width: 767px){
-.Header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-}
-
-@media screen and (max-width: 767px){
-.HeaderContainer {
-    max-width: 100%;
-    margin: 0 20px;
-}
-}
-
-@media screen and (max-width: 767px){
-.HeaderLogo__image--pc {
-    display: none;
-}
-}
-
-@media screen and (max-width: 767px){
-.HeaderLogo__image--sp {
-    display: block;
-}
-}
-
-@media screen and (max-width: 767px){
-.HeaderNavList {
-    top: 52px;
-}
-}
-
-
-@media screen and (max-width: 767px){
-main {
-    padding-top: 52px;
-}
-}
-@media screen and (max-width: 767px){
-.FirstView {
-    padding-top: 0;
-    padding-bottom: 35px;
-}
-}
-
- @media screen and (max-width: 767px){
-.FirstView__main-image--sp {
-    display: block;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstView__container {
-    margin-top: -45vw;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstView__container {
-    max-width: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent {
-    margin-bottom: 20px;
-    width: 100%;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent__title {
-    font-size: 25px;
-    line-height: 36px;
-    margin-left: calc(((100vw - 100%)/2)*-1);
-    margin-right: calc(((100vw - 100%)/2)*-1);
-}
-}
-@media screen and (max-width: 767px){
-.FirstViewContent__images {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 100%;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent__images img {
-    width: 27.5%;
-}
-}
-
-
-@media screen and (max-width: 767px){
-.FirstViewContent__buttons {
-    flex-direction: column;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent__buttons a:first-of-type {
-    margin-right: 0;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent__buttons a {
-    width: 100% !important;
-}
-}
-
-@media screen and (max-width: 767px){
-.FirstViewContent__buttons a:last-of-type {
-    display: none;
-}
-}
-
-
-@media screen and (max-width: 767px){
-.AboutWrapper {
-    padding: 30px 0;
-}
-}
-
-@media screen and (max-width: 767px){
-.About {
-    max-width: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-}
-
-@media screen and (max-width: 767px){
-.About__video {
-    width: 100%;
-    margin-bottom: 16px;
-}
-}
-
-@media screen and (max-width: 767px){
-.About__title {
-    margin-bottom: 50px;
-    width: 100%;
-}
-}
-
-@media screen and (max-width: 767px){
-.About__title h2 span {
-    letter-spacing: 1px;
-}
-}
-
 /*hover*/
 
 @media screen and (min-width: 768px){
@@ -797,4 +787,3 @@ main {
     opacity: .8;
 }
 }
-
