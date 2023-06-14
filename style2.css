@@ -74,18 +74,6 @@ header {
     display: none;
 }
  
- .lazyload {
-    background-image: none !important;
-}
- 
- 
-
-
-.HeaderContainer>*:last-child {
-    display: inline-flex;
-}
-
-
 
 
 .site-menu {
@@ -195,14 +183,12 @@ li{
  }
  
  .FirstView{
-  background-image:url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+ background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 130px;
     padding-bottom: 50px;
-    
-}
-
+ }
 .FirstView__main-image--sp {
     display: none;
 }
